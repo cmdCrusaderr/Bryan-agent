@@ -15,3 +15,4 @@ When you run the main agent script, it produces two distinct outputs:
 1. **Terminal Analysis:** An AI-generated text summary explaining exactly how your recent lifestyle habits (e.g., screen time, sleep quality) are currently affecting your resting vitals (like HRV).
 2. **Calendar Automation:** A physical "Autonomic Reset" event automatically booked into a free time slot on your live Google Calendar to ensure you recover.
 <img width="1225" height="611" alt="Screenshot 2026-05-31 at 21 30 58" src="https://github.com/user-attachments/assets/be8d71c3-fefd-46e1-b682-548d66148977" />
+<img width="921" height="695" alt="Screenshot 2026-05-31 at 21 31 32" src="https://github.com/user-attachments/assets/8ca5bdff-c006-4f1c-85e9-fc50de0ef059" />
