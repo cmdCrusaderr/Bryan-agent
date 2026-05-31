@@ -14,3 +14,4 @@ Bryan AI is an autonomous scheduling agent that monitors your physical recovery.
 When you run the main agent script, it produces two distinct outputs:
 1. **Terminal Analysis:** An AI-generated text summary explaining exactly how your recent lifestyle habits (e.g., screen time, sleep quality) are currently affecting your resting vitals (like HRV).
 2. **Calendar Automation:** A physical "Autonomic Reset" event automatically booked into a free time slot on your live Google Calendar to ensure you recover.
+<img width="1225" height="611" alt="Screenshot 2026-05-31 at 21 30 58" src="https://github.com/user-attachments/assets/be8d71c3-fefd-46e1-b682-548d66148977" />
