@@ -1,0 +1,2 @@
+person_id,cycle_id,recovery_score,hrv_rmssd_ms,skin_temp_delta_c,day_strain,max_heart_rate
+1,6998,37,39,-0.06,7.9,182

@@ -1,0 +1,9 @@
+# Data Engine & Processing
+pandas==2.2.2
+numpy==1.26.4
+
+# Environment Management & System Integration
+python-dotenv==1.0.1
+
+# Optional: Interactive Verification Loop
+ipython==8.24.0

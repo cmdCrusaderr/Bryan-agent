@@ -1,0 +1,125 @@
+name: "blueprint_metrics"
+version: "1.0.0"
+description: "Unified relational health environment"
+dsl_version: 3
+backend: jsonl
+
+tables:
+  - name: blueprint_habits
+    description: "Daily habit tracking parameters"
+    source:
+      location: "file:///Users/nishanttekwani/blueprint-agent/data/"
+      glob: "blueprint_habits.jsonl"
+    columns:
+      - name: person_id
+        type: Int64
+      - name: supper_curfew_hours
+        type: Float64
+      - name: no_caffeine_after_noon
+        type: Int64
+      - name: blue_light_block_mins
+        type: Int64
+      - name: supplement_compliance_pct
+        type: Int64
+
+  - name: blueprint_sleep
+    description: "Neuro-sleep structural metrics"
+    source:
+      location: "file:///Users/nishanttekwani/blueprint-agent/data/"
+      glob: "blueprint_sleep.jsonl"
+    columns:
+      - name: person_id
+        type: Int64
+      - name: sleep_duration
+        type: Float64
+      - name: quality_of_sleep
+        type: Int64
+      - name: sleep_disorder
+        type: Utf8
+      - name: eeg_alpha
+        type: Float64
+      - name: eeg_beta
+        type: Float64
+      - name: eeg_theta
+        type: Float64
+      - name: deep_sleep_minutes
+        type: Int64
+      - name: rem_sleep_minutes
+        type: Int64
+      - name: sleep_latency_minutes
+        type: Int64
+
+  - name: blueprint_vitals
+    description: "Physiological vital statistics"
+    source:
+      location: "file:///Users/nishanttekwani/blueprint-agent/data/"
+      glob: "blueprint_vitals.jsonl"
+    columns:
+      - name: person_id
+        type: Int64
+      - name: heart_rate
+        type: Int64
+      - name: daily_steps
+        type: Int64
+      - name: bmi_category
+        type: Utf8
+      - name: systolic_bp
+        type: Int64
+      - name: diastolic_bp
+        type: Int64
+      - name: ecg_heartrate
+        type: Int64
+      - name: ecg_qrs_duration
+        type: Float64
+      - name: ecf_na
+        type: Float64
+      - name: ecf_k
+        type: Float64
+      - name: emg_mean
+        type: Float64
+      - name: hrv_resting_ms
+        type: Int64
+      - name: skin_temp_delta_c
+        type: Float64
+
+  - name: garmin_tracker
+    description: "Mocked Garmin Connect metrics"
+    source:
+      location: "file:///Users/nishanttekwani/blueprint-agent/data/"
+      glob: "garmin_mock.jsonl"
+    columns:
+      - name: person_id
+        type: Int64
+      - name: date
+        type: Utf8
+      - name: highest_energy_level
+        type: Int64
+      - name: lowest_energy_level
+        type: Int64
+      - name: total_recharge
+        type: Int64
+      - name: average_stress_level
+        type: Int64
+      - name: resting_heart_rate
+        type: Int64
+
+  - name: whoop_tracker
+    description: "Mocked Whoop straps endpoints"
+    source:
+      location: "file:///Users/nishanttekwani/blueprint-agent/data/"
+      glob: "whoop_mock.jsonl"
+    columns:
+      - name: person_id
+        type: Int64
+      - name: cycle_id
+        type: Int64
+      - name: recovery_score
+        type: Int64
+      - name: hrv_rmssd_ms
+        type: Int64
+      - name: skin_temp_delta_c
+        type: Float64
+      - name: day_strain
+        type: Float64
+      - name: max_heart_rate
+        type: Int64
